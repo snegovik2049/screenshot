@@ -1,0 +1,222 @@
+{
+"completely":{
+	"ru":"Полностью сбылся",
+	"en":"Completely came true"
+},
+"almost":{
+	"ru":"Почти сбылся",
+	"en":"Almost came true"
+},
+"didnot":{
+	"ru":"Не сбылся",
+	"en":"Did not come true"
+},
+"unverifiable":{
+	"ru":"Невозможно проверить",
+	"en":"Unverifiable"
+},
+"awaiting":{
+	"ru":"Ожидается",
+	"en":"Awaiting results"
+},
+
+
+"notes_refs":{
+	"ru":"Примечания и ссылки",
+	"en":"Notes and references"
+},
+
+"ppm":{
+	"ru":"Монитор прогнозов и обещаний",
+	"en":"Predictions and promises monitor"
+},
+
+
+"params":{
+	"ru": "Параметры",
+	"en": "Params"
+},
+
+"post_total":{
+	"ru": "Итого оценка",
+	"en": "Final rating"
+},
+
+"complex":{
+	"ru":"Сложный",
+	"en":"Complex"
+},
+"regular":{
+	"ru":"Обычный",
+	"en":"Regular"
+},
+
+"confident":{
+	"ru":"Уверенный",
+	"en":"Confident"
+},
+"careful":{
+	"ru":"Осторожный",
+	"en":"Careful"
+},
+
+
+
+
+
+
+"sf":{
+	"awaiting":{
+		"ru":"Ожидаемые",
+		"en":"Awaiting"
+	},
+	"verified":{
+		"ru":"Проверенные",
+		"en":"Verified"
+	},
+	"new":{
+		"ru":"Новые",
+		"en":"New"
+	},
+	"total_posts":{
+		"ru":"Прогнозов",
+		"en":"Predictions"
+	},
+	"total_verified":{
+		"ru":"Проверенных",
+		"en":"Verified"
+	}
+},
+
+
+
+
+"stat":{
+	"stats":{
+		"ru":"Статистика",
+		"en":"Statistics"
+	},
+	"rating":{
+		"ru":"Рейтинг",
+		"en":"Rating"
+	},
+	"success_pct":{
+		"ru":"Сбылось",
+		"en":"Came true"
+	},			
+	"confident_pct":{
+		"ru":"Уверенных",
+		"en":"Confident"
+	},
+	"complex_pct":{
+		"ru":"Сложных",
+		"en":"Complex"
+	},
+	"total_verified":{
+		"ru":"Проверено",
+		"en":"Verified"
+	},	
+	"total":{
+		"ru":"Прогнозов",
+		"en":"Predictions"
+	},	
+	"total_authors":{
+		"ru":"Авторов",
+		"en":"Authors"
+	},
+	"total_posts":{
+		"ru":"Прогнозов",
+		"en":"Predictions"
+	}
+},
+
+"author":{
+	"ru":"Автор",
+	"en":"Author"
+},
+	
+"rating":{
+	"ru":"Рейтинг",
+	"en":"Ranking"
+},
+
+"h_authors":{
+	"ru":"Список всех авторов",
+	"en": "List of all authors"
+},
+
+"predictions":{
+	"ru":"Прогнозы",
+	"en":"Predictions"
+},
+
+"authors":{
+	"ru":"Авторы",
+	"en":"Authors"
+},
+
+"rating_authors":{
+	"ru":"Рейтинг",
+	"en":"Ranking"
+},
+
+"about":{
+	"ru":"О проекте",
+	"en":"About"
+},
+
+
+
+"about_notes":{
+	"rtg_note":{
+		"ru":"В рейтинг включены только те авторы, у которых проверено 10 и более прогнозов. Рейтинг выше 7 - отличный, ниже 5.5 - плохой.",
+		"en":"Only authors with 10 or more verified predictions are included in the ranking. A rating above 7 is excellent, below 5.5 is considered poor."
+	},
+	"how_rating":{
+		"ru":"Как вычисляется рейтинг?",
+		"en":"How is the rating calculated?"
+	}	
+},
+
+
+
+"titles":{
+	"ranking":{
+		"ru":"Рейтинг авторов | screenshot.report ",
+		"en":"Author ranking | screenshot.report "
+	},
+	"authors":{
+		"ru":"Список всех авторов | screenshot.report",
+		"en":"List of all authors | screenshot.reports"
+	},
+	"new":{
+		"ru":"Новые прогнозы | screenshot.report",
+		"en":"New predictions | screenshot.report"
+	},
+	"awaiting":{
+		"ru":"Ожидаемые прогнозы | screenshot.report",
+		"en":"Awaiting results | screenshot.report"
+	},
+	"verified":{
+		"ru":"Проверенные прогнозы | screenshot.report",
+		"en":"Verified predictions | screenshot.report"
+	},
+	"about":{
+		"ru":"О проекте | screenshot.report",
+		"en":"About | screenshot.report"
+	},
+	"prpr":{
+		"ru":"Прогнозы и обещания",
+		"en":"Predictions and promises"
+	},
+	"pred":{
+		"ru":"Прогноз",
+		"en":"Prediction"
+	},
+	"prom":{
+		"ru":"Обещание",
+		"en":"Promise"
+	}	
+
+}
+}
