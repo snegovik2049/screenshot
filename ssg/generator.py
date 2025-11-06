@@ -359,7 +359,7 @@ def create_ranking_page(stat, ranking, rlang, rsf, locales):
     output_file.parent.mkdir(parents=True, exist_ok=True)
     output_file.write_text(html_doc, encoding="utf-8")  
 
-    if rlang == "en" and rsf == "/":
+    if rlang == "ru" and rsf == "/":
         output_file = Path(f"./public/{torsf(rsf)}index.html")
         output_file.parent.mkdir(parents=True, exist_ok=True)
         output_file.write_text(html_doc, encoding="utf-8")  
