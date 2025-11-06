@@ -1,0 +1,45 @@
+name: Deploy Static Site to GitHub Pages
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x' 
+
+      - name: Run Static Site Generator
+        run: python ssg/generator.py
+
+      - name: Upload Pages artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v4 
+        with:
+          path: ./public
+          name: github-pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
