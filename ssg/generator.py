@@ -500,7 +500,7 @@ def create_about_page(rlang, locales):
 def create_base(html_block, meta, rlang, locales, rout):
     html_doc = f"""
     <!doctype html>
-    <html lang="{rlang}">
+    <html lang="{rlang}" data-theme="light">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
