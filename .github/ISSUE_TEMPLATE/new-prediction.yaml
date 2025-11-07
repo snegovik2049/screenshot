@@ -67,7 +67,7 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: title-en
     attributes:
       label: title.en
