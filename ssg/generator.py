@@ -31,6 +31,10 @@ def human_date(date_str, lang='en'):
         raise ValueError("supported languages are 'ru' and 'en'")
 
 
+def extract_numbers(s):
+    match = re.match(r'^(\d+)', s)
+    return match.group(1) if match else None
+
 
 def torsf(rsf):
     if rsf == "/":
@@ -39,6 +43,11 @@ def torsf(rsf):
         return f'/{rsf}/'
 
 
+def ensure_fields(d):
+    for x in ["time-statement","time-awaiting","time-verified"]:
+        if x in d:
+            if d[x] == "_No response_":
+                d[x] = ""
 
 def parse_fmd(file_path, keystr='###'):
     escaped_keystr = re.escape(keystr)
@@ -50,6 +59,7 @@ def parse_fmd(file_path, keystr='###'):
     res = { key.strip(): value.strip() for key, value in matches }
     for x in res:
         res[x] = html.escape(res[x])
+    ensure_fields(res)
     return res
 
 
@@ -58,9 +68,13 @@ def parse_dir(directory, extension):
     for root, dirs, files in os.walk(directory):
         for file in files:
             if file.endswith(extension):
+                nf = extract_numbers(file)
+                if nf is None:
+                    continue
                 full_path = os.path.join(root, file)
                 try:
-                    file_result = parse_fmd(full_path)                    
+                    file_result = parse_fmd(full_path) 
+                    file_result["id"] = nf                   
                     if 'id' in file_result:
                         results[file_result['id']] = file_result
                 except Exception as e:
