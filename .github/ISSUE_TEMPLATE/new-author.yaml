@@ -1,0 +1,43 @@
+name: New author
+description: Create new author
+title: "[NEW-AUTHOR] "
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: slug
+      description: 
+    validations:
+      required: true
+
+  - type: input
+    id: name-ru
+    attributes:
+      label: name.ru
+      description: 
+    validations:
+      required: true
+
+  - type: input
+    id: description-ru
+    attributes:
+      label: description.ru
+      description: 
+    validations:
+      required: true
+
+  - type: input
+    id: name-en
+    attributes:
+      label: name.en
+      description: 
+    validations:
+      required: true
+
+  - type: input
+    id: description-en
+    attributes:
+      label: description.en
+      description: 
+    validations:
+      required: true
