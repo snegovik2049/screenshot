@@ -1,0 +1,175 @@
+name: New prediction
+description: Create new prediction
+title: "[PRED] "
+labels: ["prediction"]
+body:
+  - type: input
+    id: author-name
+    attributes:
+      label: Author Name
+      description: 
+      placeholder:
+    validations:
+      required: true
+
+  - type: input
+    id: author-id
+    attributes:
+      label: Author ID
+      description: 
+      placeholder: 
+    validations:
+      required: false 
+
+  - type: textarea
+    id: statement.ru
+    attributes:
+      label: Statement [ru]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: context.ru
+    attributes:
+      label: Context [ru]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes.ru
+    attributes:
+      label: Notes [ru]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: title.ru
+    attributes:
+      label: HTML Title [ru]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: statement.en
+    attributes:
+      label: Statement [en]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: context.en
+    attributes:
+      label: Context [en]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes.en
+    attributes:
+      label: Notes [en]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: title.en
+    attributes:
+      label: HTML Title [en]
+      description: 
+      placeholder: 
+      rows: 5
+    validations:
+      required: true
+
+  - type: input
+    id: original-language
+    attributes:
+      label: Original Language
+      description: 
+      placeholder: ru
+    validations:
+      required: true
+
+  - type: input
+    id: time-statement
+    attributes:
+      label: Statement Date
+      description: 
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: input
+    id: time-awaiting
+    attributes:
+      label: Due Date
+      description: 
+      placeholder: YYYY-MM-DD
+    validations:
+      required: false
+
+  - type: input
+    id: time-verified
+    attributes:
+      label: Outcome Date
+      description: 
+      placeholder: YYYY-MM-DD
+    validations:
+      required: false
+
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      default: 0
+      options:
+        - Complex
+        - Regular
+    validations:
+      required: true
+
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Confidence
+      default: 1
+      options:
+        - Confident
+        - Careful
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      default: 0
+      options:
+        - Awaiting
+        - Completely
+        - Almost
+        - Didnot
+        - Unverifiable
+    validations:
+      required: true
