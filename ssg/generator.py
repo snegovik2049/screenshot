@@ -47,6 +47,8 @@ def ensure_fields(d):
     for x in d:
         if d[x] == "_No response_":
             d[x] = ""
+        if x == "author-id":
+            d[x] = extract_numbers(d[x])
 
 def parse_fmd(file_path, keystr='###'):
     escaped_keystr = re.escape(keystr)
