@@ -44,10 +44,9 @@ def torsf(rsf):
 
 
 def ensure_fields(d):
-    for x in ["time-statement","time-awaiting","time-verified"]:
-        if x in d:
-            if d[x] == "_No response_":
-                d[x] = ""
+    for x in d:
+        if d[x] == "_No response_":
+            d[x] = ""
 
 def parse_fmd(file_path, keystr='###'):
     escaped_keystr = re.escape(keystr)
