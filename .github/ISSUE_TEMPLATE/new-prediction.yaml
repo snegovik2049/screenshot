@@ -1,6 +1,6 @@
 name: New prediction
 description: Create new prediction
-title: "[PREDICTION] "
+title: "[NEW-PREDICTION] "
 body:
   - type: input
     id: author-id
