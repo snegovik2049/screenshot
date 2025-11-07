@@ -1,81 +1,84 @@
 name: New prediction
 description: Create new prediction
-title: "[PRED] "
+title: "[PREDICTION] "
 body:
-  - type: input
-    id: author-name
-    attributes:
-      label: Author Name
-    validations:
-      required: true
-
   - type: input
     id: author-id
     attributes:
-      label: Author ID
+      label: author-id
+      description: Author ID followed by the author's name in free form (examples - 10 Elon Musk, 10 elon-musk, 10 Илон Маск)
+      placeholder: 
     validations:
-      required: false 
+      required: true 
 
   - type: textarea
     id: statement-ru
     attributes:
-      label: Statement [ru]
+      label: statement.ru
+      description: Direct quote or translation, without any additional comments. Russian version.
     validations:
       required: true
 
   - type: textarea
     id: context-ru
     attributes:
-      label: Context [ru] 
+      label: context.ru 
+      description: Quote context. To clarify the subject matter if it is not fully apparent from the direct quote. Russian version.
     validations:
       required: false
 
   - type: textarea
     id: notes-ru
     attributes:
-      label: Notes [ru]
+      label: notes.ru
+      description: Notes and references. Russian version.
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: title-ru
     attributes:
-      label: HTML Title [ru]
+      label: title.ru
+      description: HTML title. Preferably no more than 100 characters. Russian version.
     validations:
       required: true
 
   - type: textarea
     id: statement-en
     attributes:
-      label: Statement [en]
+      label: statement.en
+      description: English version
     validations:
       required: true
 
   - type: textarea
     id: context-en
     attributes:
-      label: Context [en]
+      label: context.en
+      description: English version
     validations:
       required: false
 
   - type: textarea
     id: notes-en
     attributes:
-      label: Notes [en]
+      label: notes.en
+      description: English version
     validations:
       required: true
 
   - type: textarea
     id: title-en
     attributes:
-      label: HTML Title [en]
+      label: title.en
+      description: English version
     validations:
       required: true
 
   - type: input
     id: original-language
     attributes:
-      label: Original Language
+      label: original-language
       placeholder: ru
     validations:
       required: true
@@ -83,7 +86,7 @@ body:
   - type: input
     id: time-statement
     attributes:
-      label: Statement Date
+      label: time-statement
       placeholder: YYYY-MM-DD
     validations:
       required: true
@@ -91,7 +94,8 @@ body:
   - type: input
     id: time-awaiting
     attributes:
-      label: Due Date
+      label: time-awaiting
+      description: Due Date. Leave blank if the Due Date is unknown.
       placeholder: YYYY-MM-DD
     validations:
       required: false
@@ -99,7 +103,8 @@ body:
   - type: input
     id: time-verified
     attributes:
-      label: Outcome Date
+      label: time-verified
+      description: Outcome Date. Leave blank if the prediction outcome is not yet known. Required if the outcome is known.
       placeholder: YYYY-MM-DD
     validations:
       required: false
@@ -108,35 +113,35 @@ body:
   - type: dropdown
     id: complexity
     attributes:
-      label: Complexity
+      label: complexity
       default: 0
       options:
-        - Complex
-        - Regular
+        - complex
+        - regular
     validations:
       required: true
 
   - type: dropdown
     id: confidence
     attributes:
-      label: Confidence
+      label: confidence
       default: 1
       options:
-        - Confident
-        - Careful
+        - confident
+        - careful
     validations:
       required: true
 
   - type: dropdown
     id: status
     attributes:
-      label: Status
+      label: status
       default: 0
       options:
-        - Awaiting
-        - Completely
-        - Almost
-        - Didnot
-        - Unverifiable
+        - awaiting
+        - completely
+        - almost
+        - didnot
+        - unverifiable
     validations:
       required: true
