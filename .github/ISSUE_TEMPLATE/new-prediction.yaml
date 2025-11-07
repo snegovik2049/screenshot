@@ -79,7 +79,7 @@ body:
     id: original-language
     attributes:
       label: original-language
-      placeholder: ru
+      description: Examples - ru, en, de
     validations:
       required: true
 
