@@ -557,6 +557,10 @@ def create_base(html_block, meta, rlang, locales, rout):
             </section>
         </main>
     {"""<a class="to-top" onclick='window.scrollTo({top: 0})' aria-label="up">↑</a>""" if rout not in ['/','/about/'] else ''}
+    
+    <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
     </body>
     </html>
     """ 
