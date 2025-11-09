@@ -182,8 +182,8 @@
 
 "titles":{
 	"ranking":{
-		"ru":"Рейтинг авторов | screenshot.report ",
-		"en":"Author ranking | screenshot.report "
+		"ru":"Монитор прогнозов и обещаний | screenshot.report ",
+		"en":"Predictions and promises monitor | screenshot.report "
 	},
 	"authors":{
 		"ru":"Список всех авторов | screenshot.report",
