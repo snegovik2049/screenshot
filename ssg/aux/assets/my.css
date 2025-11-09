@@ -39,9 +39,7 @@ td {
 }
 
 .gh {
-  position: absolute;
-  top: 4px;   
-  right: 8px; 
+  position: absolute; 
   z-index: 10;    
   pointer-events: auto; 
   padding:0;
